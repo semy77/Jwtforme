@@ -189,7 +189,7 @@ def decode_jwt(token: str) -> dict:
     except Exception:
         return {}
 
-@app.route('/kirito', methods=['GET'])
+@app.route('/semy', methods=['GET'])
 def kirito_endpoint():
     access_token = request.args.get('access_token')
     uid = request.args.get('uid')
