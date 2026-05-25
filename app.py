@@ -231,7 +231,7 @@ def kirito_endpoint():
             return jsonify({
                 "success": True,
                 "platform_type_used": pt,
-                "jwt": result['token'],
+                "token": result['token'],
                 "jwt_decoded": jwt_decoded,
                 "account_uid": result['account_uid'],
                 "region": result['region'],
